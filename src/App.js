@@ -6,6 +6,7 @@ const allCategories = ["all", ...new Set(items.map((li) => li.category))];
 
 function App() {
   const [memuItems, setMenuItems] = useState(items);
+  // eslint-disable-next-line
   const [categories, setCategories] = useState(allCategories);
 
   const filterItems = (category) => {
